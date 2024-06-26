@@ -1,4 +1,4 @@
-package br.com.breno.todolist.users;
+package br.com.breno.todolist.task;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
@@ -11,21 +11,25 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-@Data // Cria os get/set automaticamente
-@Entity(name = "tb_users")
-public class UserModel {
 
+@Data
+@Entity(name = "tb_tasks")
+public class TaskModel {
+    
     @Id
     @GeneratedValue(generator = "UUID")
     private UUID id;
+    private String description;
 
-    @Column(unique = true) // se tento adicionar outro elemento com mesmo nome de usuario, ele nao deixa.
-    private String username;
-    private String name;
-    private String password;
+    @Column(length = 50)
+    private String title;
+    private LocalDateTime startAt;
+    private LocalDateTime endAt;
+    private String priority;
 
     @CreationTimestamp
     private LocalDateTime createdAt;
 
-    
+    private UUID idUser;
+
 }
