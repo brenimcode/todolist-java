@@ -11,7 +11,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import lombok.Data;
 
-@Data // Cria os get/set automaticamente
+@Data
 @Entity(name = "tb_users")
 public class UserModel {
 
@@ -19,13 +19,12 @@ public class UserModel {
     @GeneratedValue(generator = "UUID")
     private UUID id;
 
-    @Column(unique = true) // se tento adicionar outro elemento com mesmo nome de usuario, ele nao deixa.
+    @Column(unique = true)
     private String username;
+
     private String name;
     private String password;
 
     @CreationTimestamp
     private LocalDateTime createdAt;
-
-    
 }

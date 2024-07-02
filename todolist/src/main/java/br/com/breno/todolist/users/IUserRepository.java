@@ -4,9 +4,11 @@ import java.util.UUID;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
+public interface IUserRepository extends JpaRepository<UserModel, UUID> {
 
-public interface IUserRepository extends JpaRepository<UserModel,UUID>{
+    // Verifica se existe um usuário com o username especificado
+    boolean existsByUsername(String username);
 
-    // buscara por String username nas tabelas.
+    // Busca um usuário pelo username
     UserModel findByUsername(String username);
 }
