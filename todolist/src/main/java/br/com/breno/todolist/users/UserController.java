@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import at.favre.lib.crypto.bcrypt.BCrypt;
 
 @RestController
-@RequestMapping("/users")
+@RequestMapping("/users/")
 public class UserController {
 
     @Autowired // Spring vai gerenciar essa parte.

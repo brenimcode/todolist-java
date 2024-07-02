@@ -32,4 +32,12 @@ public class TaskModel {
 
     private UUID idUser;
 
+
+    public void setTitle(String title) throws Exception {
+        if(title.length() <= 50)
+            this.title = title;
+        else
+            throw new Exception("Title length greater than or equal to 50"); 
+    }
+
 }
