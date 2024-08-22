@@ -4,7 +4,7 @@ Welcome to the TodoList Java project! This repository showcases a robust Java **
 
 <br>
 
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![Maven](https://img.shields.io/badge/ApacheMaven-C71A36?logo=apachemaven&logoColor=white&style=for-the-badge) ![Tomcat](https://img.shields.io/badge/ApacheTomcat-F8DC75?logo=apachetomcat&logoColor=black&style=for-the-badge)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![Maven](https://img.shields.io/badge/ApacheMaven-C71A36?logo=apachemaven&logoColor=white&style=for-the-badge)
 
 ---
 
